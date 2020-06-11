@@ -44,7 +44,7 @@ Our you can simply run the application, and also an client application configure
 # Check your app is up
 Get 'http://localhost:3009/ws-requisition/isAlive'
 
-# Send instructions to our integration services
+# Send instructions to our integration client and show back data return
 Post 'http://localhost:3009/ws-requisition/send'
 
 Body: {
