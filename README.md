@@ -54,11 +54,9 @@ Body: {
 }
 ```
 
-Return Example:
+And you 'ill get something like this
 
 <img src="https://lucaslk10.github.io/ws-integration-response.PNG" width="100%" alt="API Response" />
-
-and you get something like this:
 
 ## To Do
 
