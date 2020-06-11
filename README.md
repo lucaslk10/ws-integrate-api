@@ -14,7 +14,7 @@ It will handle all requisition, send it to WebSocket then I'll wait for the data
 
 NestJS - Great framework to abstract APIs construction.
 
-WebSocket - Creates an bidirectional communication. You connect only once and can transfer data how much times you want and fast :)
+WebSocket - Creates an bidirectional communication. You connect only once and can transfer data how much times you want and fast :) (I prefered use WebSocket and not Socket.io for WebSocket being a native library for WS Implementations, so it has performance gains)
 
 TypeScript - You guys can know what type of data any methods expects to receive/return.
 
@@ -33,6 +33,31 @@ $ yarn start:dev
 # production mode
 $ yarn build && yarn start:prod
 ```
+
+## Endpoints
+
+APIs are documented using Swagger. You can see it running the app and acesseing localhost:3009(default)/api-docs/swagger.
+
+Our you can simply run the application, and also an client application configured to send data. I recommend you [ws-client-send-data](https://github.com/lucaslk10/ws-client-send-data). Run both apps!
+
+```bash
+# Check your app is up
+Get 'http://localhost:3009/ws-requisition/isAlive'
+
+# Send instructions to our integration services
+Post 'http://localhost:3009/ws-requisition/send'
+
+Body: {
+	"content": "do some query",
+	"microservice": "integration",
+	"sender": "Lucas"
+}
+```
+
+Return Example:
+<img src="https://lucaslk10.github.io/ws-integration-response.PNG" width="50%" alt="API Response" />
+
+and you get something like this:
 
 ## To Do
 
