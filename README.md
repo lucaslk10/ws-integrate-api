@@ -55,7 +55,8 @@ Body: {
 ```
 
 Return Example:
-<img src="https://lucaslk10.github.io/ws-integration-response.PNG" width="50%" alt="API Response" />
+
+<img src="https://lucaslk10.github.io/ws-integration-response.PNG" width="100%" alt="API Response" />
 
 and you get something like this:
 
