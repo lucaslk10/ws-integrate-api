@@ -36,7 +36,7 @@ $ yarn build && yarn start:prod
 
 ## Endpoints
 
-APIs are documented using Swagger. You can see it running the app and acesseing localhost:3009(default)/api-docs/swagger.
+APIs are documented using Swagger. You can see it running the app and acesseing localhost:3009(default)/api-docs/swagger
 
 Our you can simply run the application, and also an client application configured to send data. I recommend you [ws-client-send-data](https://github.com/lucaslk10/ws-client-send-data). Run both apps!
 
